@@ -13,6 +13,7 @@ const info = document.querySelector(".info");
 const nameP = document.querySelector(".name-p");
 const nameW = document.querySelector(".name-w");
 const nameH = document.querySelector(".name-h");
+const random = document.querySelector(".random")
 
 const getSearchApi = async (name) => {
   try {

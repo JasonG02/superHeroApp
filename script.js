@@ -28,6 +28,22 @@ const getSearchApi = async (name) => {
     console.log(error);
   }
 };
+const randomHeroApi = async (id) => {
+  try {
+    const response = await fetch(`${FULL_URL}/${id}`);
+    const data = await response.json();
+    displayInfo(data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+const randomHero = () => {
+  let randomNumber = Math.floor(Math.random() * 731) + 1;
+  randomHeroApi(randomNumber);
+  info.classList.remove("hidden");
+};
+
+random.onclick = () => randomHero();
 
 const searchHero = () => {
   let input = inputEL.value.toLowerCase();

@@ -30,14 +30,15 @@ const getSearchApi = async (name) => {
 };
 
 const searchHero = () => {
-  if (inputEL.value === "") {
+  let input = inputEL.value.toLowerCase();
+  if (input === "") {
     return;
-  } else if (inputEL.value === "spiderman") {
+  } else if (input === "spiderman") {
     inputEL.value = "spider-man";
-    getSearchApi(inputEL.value);
+    getSearchApi(input);
     info.classList.remove("hidden");
   } else {
-    getSearchApi(inputEL.value);
+    getSearchApi(input);
     info.classList.remove("hidden");
   }
 };

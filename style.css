@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url(./background4.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.info {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+.title {
+  margin-bottom: 15px;
+}
+.main-container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 8px;
+  height: auto;
+  width: 500px;
+  background-color: whitesmoke;
+}
+.wrapper {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  width: auto;
+}
+.container {
+  padding: 5px;
+}
+.name {
+  text-align: center;
+}
+input {
+  border: none;
+  background-color: rgb(237, 237, 237);
+  border-radius: 5px;
+  padding: 15px;
+  width: 80%;
+  font-size: 15px;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(183, 0, 0);
+}
+.hero-img {
+  width: auto;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.bio {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: auto;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.stats {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.hidden {
+  display: none;
+}
+.p {
+  font-weight: bold;
+}
+.line {
+  width: 100%;
+  height: 20px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+.fill {
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  width: 0%; /* Initial width */
+  transition: width 0.5s ease-in-out;
+}
+.stat-wrapper {
+  margin-top: 15px;
+}
+.image {
+  margin-top: 10px;
+  align-self: center;
+}
+.title {
+  color: white;
+}
+@media (max-width: 750px) {
+  .main-container {
+    width: 95%;
+  }
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  button {
+    padding: 10px 15px;
+  }
+  input {
+    padding: 10px;
+    width: 50%;
+  }
+}
